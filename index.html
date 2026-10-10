@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080811">
+<title>Siri AI — Your AI Assistant</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #f7f7ff;
+  background: #080811;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+  border-bottom: 1px solid #ffffff12;
+}
+.logo { font-weight: 700; font-size: 21px; }
+nav a, .secondary { color: #b9b8d0; text-decoration: none; }
+.hero {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+.orb {
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  background: conic-gradient(#66e7ff, #9b75ff, #ff76c8, #ffcf83, #66e7ff);
+  box-shadow: 0 0 45px #9274ff66, 0 0 100px #5bdcff20;
+  animation: float 4s ease-in-out infinite;
+  position: relative;
+  margin-bottom: 38px;
+}
+.orb::after {
+  content: "";
+  position: absolute;
+  inset: 9px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 25%, #ffffffbb, transparent 20%),
+              radial-gradient(circle at 70% 70%, #252047, #090914 65%);
+  border: 1px solid #ffffff40;
+}
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+h1 {
+  font-size: clamp(42px, 8vw, 76px);
+  letter-spacing: -3px;
+  margin: 0 0 18px;
+}
+.gradient {
+  background: linear-gradient(90deg, #8ceaff, #b6a0ff, #ff9bdb);
+  color: transparent;
+  background-clip: text;
+}
+p { color: #aaa9c3; line-height: 1.7; max-width: 560px; }
+.btn {
+  display: inline-block;
+  margin: 22px 8px 0;
+  padding: 14px 23px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(100deg, #7665f5, #bb69ef);
+}
+.secondary { display: inline-block; padding: 14px; }
+section { padding: 55px 8%; text-align: center; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 18px;
+  margin-top: 30px;
+}
+.card {
+  background: linear-gradient(145deg, #171727, #0d0d18);
+  border: 1px solid #ffffff14;
+  border-radius: 20px;
+  padding: 25px;
+  text-align: left;
+}
+.card h3 { margin-top: 0; }
+.card p { font-size: 14px; }
+footer {
+  text-align: center;
+  color: #77768e;
+  padding: 30px 15px;
+  border-top: 1px solid #ffffff12;
+  font-size: 13px;
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">✦ Siri AI</div>
+  <a href="#features">Features</a>
+</nav>
+
+<main>
+  <div class="hero">
+    <div class="orb" aria-label="Glowing animated orb"></div>
+    <h1>A smarter way<br>to <span class="gradient">interact.</span></h1>
+    <p>Your personal AI shortcut experience, reimagined.
+       Discover natural conversations, helpful responses,
+       and a new way to use AI on iOS.</p>
+    <div>
+      <a class="btn" href="#get-started">Get Started ↗</a>
+      <a class="secondary" href="#features">Explore features</a>
+    </div>
+  </div>
+
+  <section id="features">
+    <h2>Designed for your workflow.</h2>
+    <p>AI assistance meets the convenience of iOS Shortcuts.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>🎙️ Voice interaction</h3>
+        <p>Build a more natural, hands-free assistant experience.</p>
+      </div>
+      <div class="card">
+        <h3>✧ Smart responses</h3>
+        <p>Get helpful answers through your connected AI model.</p>
+      </div>
+      <div class="card">
+        <h3>⚡ iOS Shortcuts</h3>
+        <p>Connect your assistant to your own shortcut workflow.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="get-started">
+    <h2>Ready to try Siri AI?</h2>
+    <p>Add your own Siri AI Shortcut link to connect this website to your project.</p>
+    <a class="btn" href="https://www.icloud.com/shortcuts/"
+       target="_blank" rel="noopener">Open Shortcuts ↗</a>
+  </section>
+</main>
+
+<footer>
+  An independent AI shortcut project. Not affiliated with Apple Inc.
+  <br><br>© 2026 Siri AI Project
+</footer>
+</body>
+</html>
